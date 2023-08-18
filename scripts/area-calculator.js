@@ -20,7 +20,7 @@ function calculateTriangleArea(){
     areaSpan.innerText = area;
 }
 
-//reusable code added function in rectangle
+//reusable code added function in rectangle and paraligram
 function calculateRectangleArea(){
  const width = getInputValue("rectangle-width");
  console.log(width)
@@ -30,6 +30,17 @@ function calculateRectangleArea(){
  //area calculate
  const area = width * length;
  setElementInnerText("reactangle-area" , area);
+}
+//paralaligram
+function calculateParallelogramArea(){
+    const base = getInputValue("parallelogram-base");
+    console.log(base)
+
+    const height = getInputValue("parallelogram-height");
+    console.log(height)
+    //calculate area
+    const area =base * height;
+    setElementInnerText("parallelogram-area" ,area);
 }
 
 // get input value feild in number
